@@ -68,6 +68,10 @@ body {
     left: 0;
     right: 0;
   }
+
+  .download {
+    display: none;
+  }
 }
 
 @media screen {
@@ -83,6 +87,7 @@ body {
     text-align: left;
     padding-left: 2rem;
     top: 0;
+    position: relative;
   }
 
   footer {
@@ -96,5 +101,21 @@ body {
     min-height: 3rem;
     padding: 1rem;
     margin: 0;
+  }
+
+  .download {
+    font-size: 1.2rem;
+    padding: 3px;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+  }
+
+  .download::before {
+    content: '⬇';
   }
 }
