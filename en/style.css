@@ -48,6 +48,7 @@ body {
   /*background-repeat: repeat;*/ /* Make the image repeat */
   /*background-size: cover;*/ /* Make the image cover the whole container */
   -webkit-print-color-adjust: exact !important;
+  counter-reset: number;
 }
 
 /* The main content of the page between the header and footer */
@@ -95,6 +96,11 @@ section {
   background: rgba(var(--primary), 0.15);
   border: 0.2rem solid rgba(var(--primary), 1);
   text-align: center;
+}
+
+.number::before {
+  counter-increment: number;
+  content: counter(number);
 }
 
 /* Border styles */
@@ -243,6 +249,10 @@ a:visited {
 
 .wrap .wide {
   width: 22rem;
+}
+
+.wrap .medium {
+  width: 18rem;
 }
 
 .wrap .wider {

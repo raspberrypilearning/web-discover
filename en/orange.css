@@ -1,7 +1,7 @@
 /* Set up colour palette and fonts using variables */
 
 :root {
-  --primary: 255, 177, 42;
+  --primary: 253, 140, 70;
   --onprimary: 255, 255, 255;
   --secondary: 255, 255, 255;
   --onsecondary: 0, 0, 0;
@@ -9,7 +9,7 @@
   --ontertiary: 255, 255, 255;
   --page: 255, 255, 255;
   --onpage: 0, 0, 0;
-  --detail: 255, 177, 42;
+  --detail: 253, 140, 70;
   --detail2: 0, 0, 0;
 
   --body-font: 1rem 'Rubik', sans-serif;
