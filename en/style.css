@@ -85,10 +85,12 @@ section {
   /*margin: 1rem auto;*/
 }
 
-.number {
+.number::before {
+  counter-increment: number;
+  content: counter(number);
   display: inline-block;
-  height: 2rem;
-  width: 2rem;
+  height: 1.2rem;
+  width: 1.2rem;
   font-weight: bold;
   color: var(--onpage);
   border-radius: 50%;
@@ -96,11 +98,6 @@ section {
   background: rgba(var(--primary), 0.15);
   border: 0.2rem solid rgba(var(--primary), 1);
   text-align: center;
-}
-
-.number::before {
-  counter-increment: number;
-  content: counter(number);
 }
 
 /* Border styles */
