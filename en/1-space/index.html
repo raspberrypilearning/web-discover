@@ -3,8 +3,15 @@
     <meta charset="UTF-8" />
     <title>Photos from space: Discover Web development with HTML and CSS</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link href="../print.css" rel="stylesheet" type="text/css"  />
-    <link href="../turquoise.css" rel="stylesheet" type="text/css" />
+    <link href="../yellow.css" rel="stylesheet" type="text/css" />
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <link href="../prism.css" rel="stylesheet" type="text/css" />
 
@@ -27,26 +34,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
   </head>
   <body>
     <div class="outer-page">
       <div class="sub-page">
         <header class="primary wrap">
-          <a class="download" href="https://github.com/raspberrypilearning/web-discover/raw/master/pdf/Photos%20from%20space_%20Discover%20Web%20development%20with%20HTML%20and%20CSS.pdf"></a>
-          <img class="logo" src="../images/rpf.1e22ed4f.svg" alt="Raspberry Pi logo">
-          <div class="medium">
-            <h2>Discover 🧭</h2>
-            <a href="https://rpf.io/web-discover-space"
-            >rpf.io/web-discover-space</a
-            >
+            <div class="ribbon"><span>1</span></div>
+            <a class="download" href="https://github.com/raspberrypilearning/web-discover/raw/master/pdf/Photos%20from%20space_%20Discover%20Web%20development%20with%20HTML%20and%20CSS.pdf"></a>
+            <a class="offline" href="rpf.io/web-discover-space">rpf.io/web-discover-space</a>
+          <img class="logo" src="../images/RPF.png" alt="Raspberry Pi logo">
+          <div class="medium">       
+            <h2>Photo gallery</h2>
+            <h3>Space <span class="material-symbols-outlined">
+                rocket_launch
+                </span></h3>
           </div>
-          <div><h3>Web development with HTML and CSS </h3></div>
+          <div>
+            
+            <!-- <a href="https://rpf.io/web-discover-space"
+              >rpf.io/web-discover-space</a
+              > -->
+              <h3>Discover <span class="material-symbols-outlined adjust">
+                  explore</span></h3>
+              <h4>Web: HTML and CSS</h4></div>
         </header>
         <main class="page main-page">
           <section class="wrap">
             <div class="wide solid-border rounded page tile number">
-              In a <strong>web browser</strong> go to: <br>
+               In a <strong>web browser</strong> go to: <br>
               <span class="xcenter inline-center"> <a href="https://rpf.io/web-space" target="_blank"><code class="lang-html">rpf.io/web-space</code></a></span>
             </div>
 
@@ -57,23 +72,27 @@
               <code class="lang-html">&lt;head&gt;</code>.
             </div>
             <div class="wider solid-border rounded page number">
-              <strong>Find</strong>
+                <strong>Find</strong>
                 <code class="lang-html">&lt;h1&gt; &lt;/h1&gt;</code>. <br/>
                 <strong>Add</strong> a
                 heading inside:
-                <code class="lang-html">&lt;h1&gt; Photos from space &lt;/h1&gt;</code>
+                <code class="lang-html">&lt;h1&gt; Photos from space &lt;/h1&gt;</code>            
             </div>
             <img class="rounded" src="images/heading1.png" alt="Photos from Space">
 
             <img class="rounded narrow" src="images/images.png" alt="Four images of Earth from space"/>
             <div class="wider solid-border rounded page number">
-              <strong>Find</strong>
+             <strong>Find</strong>
               <code class="lang-html">&lt;img class="" src="empty.jpg"&gt;</code>.
               <p><strong>Replace</strong> <code class="lang-html">empty.jpg</code> with any of
               <code class="lang-html">bay.jpg</code>, <code class="lang-html">clouds.jpg</code>,
               <code class="lang-html">coast.jpg</code class="lang-html">, <code class="lang-html">mountains.jpg</code>. </p>
-              <p>🔁 Do the same
-              for the other <code class="lang-html">&lt;img &gt;</code> lines to add more photos.</p>
+              <div class="dashed-border rounded primary">
+              <p><strong><span class="material-symbols-outlined">
+                repeat
+                </span>  Repeat </strong>
+              for the other images.</p>
+              </div>
             </div>
 
             <div class="wider solid-border rounded page number">
@@ -89,11 +108,12 @@
                   <li>
                     <code class="lang-html">&lt;footer class="border-top secondary"&gt;</code>.
                   </li>
-                </ul>             
-              </div>
+                </ul></div>             
               <br>
               <div class="dashed-border rounded primary">
-                <p><strong>👆🏾 Try: </strong> Hover over a photo and see what happens.</p>
+                <p><strong><span class="material-symbols-outlined">
+                  swipe
+                  </span> Hover </strong> over a photo and see what happens.</p>
               </div>
             </div>
             <img class="rounded" src="images/with-classes.png" alt="Screenshot of webpage with the title Photos from Space and the four images from space."/>
@@ -101,16 +121,19 @@
             <img class="rounded" src="images/finished.png" alt="Screenshot of the completed webpage that you can create following this tutorial." />
             <div class="wider solid-border rounded page">
               <div>
-                <span class="extra">Extra: </span> Create two new sections with space-themed emoji. 
-                <strong>Add</strong> one before and one after the <code class="lang-html">&lt;section&gt; &lt;/section&gt;</code> containing the photos:
+                <span class="extra">Extra: </span> <strong>Add</strong> two new sections
+                with space-themed emoji before and after the <code class="lang-html">&lt;/section&gt; &lt;/section&gt;</code> with photos
+                in:
                 <p><code class="lang-html">&lt;section class="primary bigfont xcenter"&gt;</code><br>
                   &nbsp;&nbsp;&nbsp;<code class="lang-html">   🚀 📷 ☄️</code><br>
-                  <code class="lang-html">&lt;/section&gt;</code></p>
+                  <code class="lang-html">&lt;section&gt;</code></p>
               </div>
               <br>
               <div class="dashed-border rounded primary">
                 <p>
-                  <strong>🔎 Find</strong> and copy emoji from <strong
+                  <strong><span class="material-symbols-outlined">
+                    travel_explore
+                    </span> Find</strong> and copy emoji from <strong
                   ><a href="https://rpf.io/emoji">rpf.io/emoji</a></strong>
                 </p>
               </div>
@@ -119,16 +142,16 @@
         </main>
         <br>
         <footer class="primary">
-            View finished project
+            Finished project:
             <strong
               ><a href="https://rpf.io/web-space-complete">rpf.io/web-space-complete</a></strong
-            >. 
-          Make more web pages 
+            > 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What next? 
           <strong
             ><a href="https://rpf.io/web-intro"
             >rpf.io/web-intro</a
             ></strong
-          >
+            >
         </footer>
       </div>
     </div>
