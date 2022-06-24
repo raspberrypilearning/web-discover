@@ -72,6 +72,17 @@ body {
   .download {
     display: none;
   }
+
+  .offline {
+    font-size: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .offline {
+    text-decoration: none;
+  }
 }
 
 @media screen {
@@ -117,5 +128,9 @@ body {
 
   .download::before {
     content: '⬇';
+  }
+
+  .offline {
+    display: none;
   }
 }
