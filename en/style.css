@@ -28,6 +28,60 @@
   box-sizing: border-box; /* Padding and border don't make a box bigger */
 }
 
+/* Ribbon css */
+
+.box {
+  width: 200px; height: 300px;
+  position: relative;
+  border: 1px solid #BBB;
+  background: #EEE;
+}
+.ribbon {
+  position: absolute;
+  left: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#000 0%, #000 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; left: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #1e5799;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1e5799;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #1e5799;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1e5799;
+}
+
+/* Ribbon css ends */
+
 html,
 body {
   width: 100%;
@@ -132,6 +186,14 @@ h2 {
   font: var(--title-font); /* Font style stored in the title-font variable */
 }
 
+h3 {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+h4 {
+}
+
 /* Highlight key words in bold and apply an alternative text colour */
 
 strong {
@@ -181,6 +243,19 @@ a:visited {
   display: flex;
   justify-content: center;
   flex-flow: column;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.adjust {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
 }
 
 /* Styles just for the .wrap class */
@@ -357,7 +432,8 @@ cite {
 }
 
 .wrap .logo {
-  width: 8rem;
+  height: 17mm;
+  width: auto;
 }
 
 .inline-center {
