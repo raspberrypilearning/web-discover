@@ -350,6 +350,10 @@ cite {
   height: 6rem;
 }
 
+.large-tile {
+  height: 7rem;
+}
+
 .rounded {
   border-radius: 0.7rem;
 }
